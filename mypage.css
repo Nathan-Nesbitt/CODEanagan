@@ -1,0 +1,103 @@
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: initial;
+    background-color: rgba(80, 80, 195);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(125, 125, 163, 0.5);
+}
+
+header div {
+    margin-left: 10px;
+}
+
+header div a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#about {
+    min-height: 400px;
+}
+
+#about div {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: rgb(70, 150, 150);
+}
+
+#experience>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#experience>div>div {
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 400px;
+    background-color: rgb(96, 209, 134);
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+
+    #links,
+    #experience,
+    #about div {
+        min-height: 200px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    #links,
+    #experience,
+    #about {
+        min-height: 200px;
+    }
+
+    #about div {
+        min-height: 200px;
+    }
+}
