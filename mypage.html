@@ -46,6 +46,78 @@
                     <a href="https://github.com/Nathan-Nesbitt"><img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png"></a>
                 </div>
             </section>
+            <section id="clicks">
+            </section>
         </main>
     </body>
+    <script>
+        // This is how you print to the terminal //
+        console.log("Hello World!");
+
+        // Adding a variable //
+        var box = "Hello World";
+        console.log(box);
+
+        var my_number = 10;
+        console.log(my_number);
+
+        // Manipulating variables //
+        my_number = my_number + 1;
+        console.log(my_number);
+
+        // Conditions //
+        var nathan_is_awesome = false;
+        if(nathan_is_awesome) {
+            console.log("Buy nathan a cake!");
+        }
+        else if (10+11  === 21) {
+            console.log("Your math is okay!")
+        } 
+
+        // Loops //
+        for(var num = 0; num < 10; num ++)
+            console.log("Happy Birthday!");
+
+        // Arrays //
+        var my_shopping_list = [];
+
+        my_shopping_list.push("Chocolate Chip Cookies");
+        my_shopping_list.push("Bananas");
+        my_shopping_list.push("Burger Patties");
+
+        console.log(my_shopping_list)
+
+        // This is looping through our list // 
+        for(var num = 0; num < my_shopping_list.length; num++)
+            console.log("Nathan! Buy: " + my_shopping_list[num]);
+
+        // Function //
+        function print_list(list) {
+            for(var num = 0; num < list.length; num++)
+                console.log(list[num]);
+        }
+
+        print_list(my_shopping_list);
+
+        var cool_toys = ["BMW", "Monster Truck", "Rubiks Cube", "New Haircut", "Monopoly"];
+
+        print_list(cool_toys);
+
+        
+        // Listening for someone clicking! //        
+        var click_section = document.getElementById("clicks");
+
+        var num = 0;
+        document.addEventListener("click", function() {
+            num = num + 1;
+
+            // Adds an element into the document //
+            var text = document.createTextNode("SOMEONE CLICKED YOUR PAGE FOR THE " + num + " TIME!");
+            var parent = document.createElement("p");
+            parent.appendChild(text);
+            click_section.appendChild(parent);
+        })
+
+
+    </script>
 </html>
